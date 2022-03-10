@@ -1,0 +1,17 @@
+import java.util.*;
+class area {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        double b, h, a;
+        System.out.println("Enter base of the triangle");
+        b = sc.nextInt();
+        System.out.println("Enter base of the Height");
+        h = sc.nextInt();
+        
+        a = (b*h)/2 ;
+        
+        System.out.println("Area = "+a);
+        
+    }
+}
