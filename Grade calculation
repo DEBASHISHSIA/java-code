@@ -1,0 +1,20 @@
+import java.util.*;
+class grade {
+    public static void main(String args[])
+    {
+        double p;
+        char g;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the overal percentage ");
+        p = sc.nextDouble();
+        if (p < 40 )
+            g = 'F';
+        else if ( ( p >= 40) && (p < 60 ) ) 
+            g = 'C';
+        else if ( (p >= 60 ) && (p<80))
+            g = 'B';
+        else
+            g = 'A';
+        System.out.println("Grade = "+g);
+    }
+}
