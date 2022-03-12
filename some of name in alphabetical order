@@ -1,0 +1,30 @@
+import java.util.*;
+class Aalphabetical {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        String arr[] = new String [5];
+        String temp = "";
+        System.out.println("Enter Name of 5 person");
+        for(int i = 0; i < 5; i++)
+        {
+            arr[i] = sc.nextLine();
+        }
+        for (int i = 0; i < arr.length ; i++){
+            for(int j = i+1 ; j < arr.length ; j++)
+            {
+                if (arr[i].compareTo(arr[j]) > 0 )
+                {
+                   temp = arr[i];
+                   arr[i] = arr[j];
+                   arr[j] = temp;
+                }
+            }
+        }
+        System.out.println("Name in alphabetical oredr");
+        for (int i = 0 ; i < 5 ; i++)
+        {
+            System.out.println(arr[i]);
+        }
+    }
+}
