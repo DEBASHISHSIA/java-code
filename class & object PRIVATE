@@ -1,0 +1,48 @@
+import java.util.*;
+class student {
+    private int rol;
+    private String name;
+    private char grade;
+    private int m1,m2,m3;
+    
+    public void input ()
+    {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter studebt Name");
+        name = sc.nextLine();
+        System.out.println("Enter studebt Roll No");
+        rol = sc.nextInt();
+        System.out.println("Enter Marks in 1st subject");
+        m1 = sc.nextInt();
+        System.out.println("Enter Marks in 2n subject");
+        m2 = sc.nextInt();
+        System.out.println("Enter Marks in 3rd subject");
+        m3 = sc.nextInt();
+    }
+    public void calculate ()
+    {
+        double avg = (m1+m2+m3)/3;
+        if (avg < 50 )
+        {
+            grade = 'F';
+        }
+        else
+        {
+            grade = 'P';
+        }
+    }
+    public void dispalay ()
+    {
+        System.out.println("Name - " +name);
+        System.out.println("Roll No - " +rol);
+        System.out.println("Marks in 3 subject - " + m1  + "," + m2+ "," +m3);
+        System.out.println("Grade - " + grade);
+    }
+    public static void main(String args[])
+    {
+        student s = new student();
+        s.input();
+        s.calculate();
+        s.dispalay();
+    }
+}
