@@ -1,0 +1,40 @@
+import java.util.*;
+class functionalArea {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Area of : \n1 - Rectangle \n2 - Square \n3 - Tringle \n4 - Circle \n");
+        System.out.println("Enter your choice which you want to perform");
+        int n = sc.nextInt();
+        switch (n)
+        {
+            case 1 : 
+            System.out.println("Enter the length of the Rectangle");
+            double l = sc.nextDouble();
+            System.out.println("Enter the breadth of the Rectangle");
+            double b = sc.nextDouble();
+            System.out.println("Area = " + (l*b));
+            break;
+            
+            case 2 : 
+                System.out.println("Enter the length of the Square ");
+                double l1 = sc.nextDouble();
+                System.out.println("Area = " + (l1*l1) );
+                break;
+            case 3 : 
+                System.out.println("Enter the height of the triangle");
+                double h = sc.nextDouble();
+                System.out.println("Enter the Base of the triangle");
+                double b1 = sc.nextDouble();
+                System.out.println("Area = " + (b1*h)/2);
+                break;
+            case 4 : 
+                System.out.println("Enter the Radius of the circle");
+                double r = sc.nextDouble();
+                System.out.println("Area = " + 3.14*(r*r) );
+                break;
+            default :
+                System.out.println("Enter a valid choice ");
+        }
+    }
+}
