@@ -1,0 +1,11 @@
+class variable
+{
+    int iv ;
+    static int vs = 10;
+    public static void main(String args[])
+    {
+        variable v = new variable();
+        System.out.println("Instance varibale : " + v.iv);
+        System.out.println("Static variable : " + vs);
+    }
+}
